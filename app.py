@@ -8,10 +8,12 @@ import random
 warnings.filterwarnings("ignore")
 
 # --- CONFIGURATION ---
-# ⚠️ APNI API KEY YAHAN PASTE KARO
-API_KEY = "AIzaSyCCMjow8m63wEQAj0bgi_iK68M_LKtu2WQ" 
 
-# --- PAGE SETUP (Sabse Pehle) ---
+import streamlit as st
+# API Key from Secrets
+API_KEY = st.secrets["GEMINI_API_KEY"]
+
+# --- PAGE SETUP ---
 st.set_page_config(
     page_title="Tata Elxsi - GenAI Suite",
     layout="wide",
@@ -50,10 +52,10 @@ system_type = st.sidebar.selectbox(
     "Select Vehicle Domain:", 
     ["Battery Management System (BMS)", "Tyre Pressure Monitoring (TPMS)", "ADAS - Lane Keep Assist", "Motor Controller"]
 )
- # Line 83 ke aas paas
+ 
 target_language = st.sidebar.radio(
     "Target Language:", 
-    ["C++ (MISRA Standard)", "Python", "Rust", "Kotlin (Android/HMI)"] # Kotlin Add kiya
+    ["C++ (MISRA Standard)", "Python", "Rust", "Kotlin (Android/HMI)"] 
 )
 
 # --- MAIN HEADER WITH LOGO ---
@@ -61,10 +63,10 @@ col_logo, col_title = st.columns([1, 5])
 
 with col_logo:
     try:
-        # Tumhara save kiya hua logo
+        
         st.image("logo.jpg", width=140) 
     except:
-        # Fallback agar photo na mile
+       
         st.markdown("## 🚘 TATA ELXSI")
 
 with col_title:
@@ -115,9 +117,9 @@ Requirements:
                     response = model.generate_content(final_prompt)
                     
                     st.success("✔ Generation Successful")
-                    # ... st.success("✔ Generation Successful") ke neeche ...
+                  
                     
-                    # --- KPI DISPLAY (Jo Case study ne manga hai) ---
+                    # --- KPI DISPLAY---
                     kpi1, kpi2, kpi3 = st.columns(3)
                     kpi1.metric("⏱️ Time Saved", "98%", "4hrs → 2s")
                     kpi2.metric("💰 Cost Reduced", "High", "Manual Effort")
@@ -125,7 +127,7 @@ Requirements:
                     
                     st.markdown("---")
                     
-                    # Uske baad st.code()...
+                
                     st.code(response.text, language=target_language.lower().split()[0])
                     st.session_state['generated_code'] = response.text
                     
