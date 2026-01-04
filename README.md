@@ -1,8 +1,4 @@
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
-![Gemini AI](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
-![Automotive](https://img.shields.io/badge/Domain-Automotive%20SDV-orange?style=for-the-badge)
-![Compliance](https://img.shields.io/badge/Standard-MISRA%20C%2B%2B-green?style=for-the-badge)# 🚘 Tata Elxsi GenAI Suite - SDV Architect
+# 🚘 Tata Elxsi GenAI Suite - SDV Architect
 
 ### 🚀 Powered by Gemini 2.5 | TELIPORT Season 3
 
@@ -22,6 +18,11 @@
 - **Frontend:** Streamlit (Python)
 - **AI Core:** Google Gemini 2.5 Flash
 - **Deployment:** Streamlit Community Cloud
+- ![Python](https://img.shields.io/badge/Python-3.9%2B-blue?style=for-the-badge&logo=python&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Gemini AI](https://img.shields.io/badge/Google%20Gemini-8E75B2?style=for-the-badge&logo=googlebard&logoColor=white)
+![Automotive](https://img.shields.io/badge/Domain-Automotive%20SDV-orange?style=for-the-badge)
+![Compliance](https://img.shields.io/badge/Standard-MISRA%20C%2B%2B-green?style=for-the-badge)
 
 ### 🔗 Live Demo
 [Click here to view the App](https://tata-genai-suite.streamlit.app/)
